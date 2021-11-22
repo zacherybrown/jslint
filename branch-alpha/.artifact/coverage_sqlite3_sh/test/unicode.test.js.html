@@ -184,33 +184,33 @@ body {
 <pre><span class="lineno"><a href="#line_36" id="line_36">   36.</a></span><span class="count                ">     32</span><span>        subranges[1].push(i);</span></pre>
 <pre><span class="lineno"><a href="#line_37" id="line_37">   37.</a></span><span class="count                ">     32</span><span>    }</span></pre>
 <pre><span class="lineno"><a href="#line_38" id="line_38">   38.</a></span><span class="count                ">      1</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_39" id="line_39">   39.</a></span><span class="count                "> 102005</span><span>    function random_choice(arr) {</span></pre>
-<pre><span class="lineno"><a href="#line_40" id="line_40">   40.</a></span><span class="count                "> 102005</span><span>        return arr[Math.random() * arr.length | 0];</span></pre>
-<pre><span class="lineno"><a href="#line_41" id="line_41">   41.</a></span><span class="count                "> 102005</span><span>    }</span></pre>
+<pre><span class="lineno"><a href="#line_39" id="line_39">   39.</a></span><span class="count                "> 109741</span><span>    function random_choice(arr) {</span></pre>
+<pre><span class="lineno"><a href="#line_40" id="line_40">   40.</a></span><span class="count                "> 109741</span><span>        return arr[Math.random() * arr.length | 0];</span></pre>
+<pre><span class="lineno"><a href="#line_41" id="line_41">   41.</a></span><span class="count                "> 109741</span><span>    }</span></pre>
 <pre><span class="lineno"><a href="#line_42" id="line_42">   42.</a></span><span class="count                ">      1</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_43" id="line_43">   43.</a></span><span class="count                ">  70939</span><span>    function random_utf8() {</span></pre>
-<pre><span class="lineno"><a href="#line_44" id="line_44">   44.</a></span><span class="count                ">  70939</span><span>        var first = random_choice(first_values);</span></pre>
-<pre><span class="lineno"><a href="#line_45" id="line_45">   45.</a></span><span class="count                ">  70939</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_46" id="line_46">   46.</a></span><span class="count                ">  47846</span><span>        if (first &lt; 0x80) {</span></pre>
-<pre><span class="lineno"><a href="#line_47" id="line_47">   47.</a></span><span class="count                ">  47846</span><span>            return String.fromCharCode(first);</span></pre>
-<pre><span class="lineno"><a href="#line_48" id="line_48">   48.</a></span><span class="count                ">  47846</span><span>        } else if (first &lt; 0xe0) {</span></pre>
-<pre><span class="lineno"><a href="#line_49" id="line_49">   49.</a></span><span class="count                ">  23093</span><span>            return String.fromCharCode((first &amp; 0x1f) &lt;&lt; 0x6 | random_choice(trailing_values) &amp; 0x3f);</span></pre>
-<pre><span class="lineno"><a href="#line_50" id="line_50">   50.</a></span><span class="count                ">  23093</span><span>        } else if (first == 0xe0) {</span></pre>
-<pre><span class="lineno"><a href="#line_51" id="line_51">   51.</a></span><span class="count                ">  23093</span><span>             return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(subranges[0]) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
-<pre><span class="lineno"><a href="#line_52" id="line_52">   52.</a></span><span class="count                ">  23093</span><span>        } else if (first == 0xed) {</span></pre>
-<pre><span class="lineno"><a href="#line_53" id="line_53">   53.</a></span><span class="count                ">  23093</span><span>            return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(subranges[1]) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
-<pre><span class="lineno"><a href="#line_54" id="line_54">   54.</a></span><span class="count                ">  23093</span><span>        } else if (first &lt; 0xf0) {</span></pre>
-<pre><span class="lineno"><a href="#line_55" id="line_55">   55.</a></span><span class="count                ">  23093</span><span>            return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(trailing_values) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
-<pre><span class="lineno"><a href="#line_56" id="line_56">   56.</a></span><span class="count                ">  23093</span><span>        }</span></pre>
-<pre><span class="lineno"><a href="#line_57" id="line_57">   57.</a></span><span class="count                ">  70939</span><span>    }</span></pre>
+<pre><span class="lineno"><a href="#line_43" id="line_43">   43.</a></span><span class="count                ">  76428</span><span>    function random_utf8() {</span></pre>
+<pre><span class="lineno"><a href="#line_44" id="line_44">   44.</a></span><span class="count                ">  76428</span><span>        var first = random_choice(first_values);</span></pre>
+<pre><span class="lineno"><a href="#line_45" id="line_45">   45.</a></span><span class="count                ">  76428</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_46" id="line_46">   46.</a></span><span class="count                ">  51781</span><span>        if (first &lt; 0x80) {</span></pre>
+<pre><span class="lineno"><a href="#line_47" id="line_47">   47.</a></span><span class="count                ">  51781</span><span>            return String.fromCharCode(first);</span></pre>
+<pre><span class="lineno"><a href="#line_48" id="line_48">   48.</a></span><span class="count                ">  51781</span><span>        } else if (first &lt; 0xe0) {</span></pre>
+<pre><span class="lineno"><a href="#line_49" id="line_49">   49.</a></span><span class="count                ">  24647</span><span>            return String.fromCharCode((first &amp; 0x1f) &lt;&lt; 0x6 | random_choice(trailing_values) &amp; 0x3f);</span></pre>
+<pre><span class="lineno"><a href="#line_50" id="line_50">   50.</a></span><span class="count                ">  24647</span><span>        } else if (first == 0xe0) {</span></pre>
+<pre><span class="lineno"><a href="#line_51" id="line_51">   51.</a></span><span class="count                ">  24647</span><span>             return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(subranges[0]) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
+<pre><span class="lineno"><a href="#line_52" id="line_52">   52.</a></span><span class="count                ">  24647</span><span>        } else if (first == 0xed) {</span></pre>
+<pre><span class="lineno"><a href="#line_53" id="line_53">   53.</a></span><span class="count                ">  24647</span><span>            return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(subranges[1]) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
+<pre><span class="lineno"><a href="#line_54" id="line_54">   54.</a></span><span class="count                ">  24647</span><span>        } else if (first &lt; 0xf0) {</span></pre>
+<pre><span class="lineno"><a href="#line_55" id="line_55">   55.</a></span><span class="count                ">  24647</span><span>            return String.fromCharCode(((first &amp; 0xf) &lt;&lt; 0xc) | ((random_choice(trailing_values) &amp; 0x3f) &lt;&lt; 6) | random_choice(trailing_values) &amp; 0x3f);</span></pre>
+<pre><span class="lineno"><a href="#line_56" id="line_56">   56.</a></span><span class="count                ">  24647</span><span>        }</span></pre>
+<pre><span class="lineno"><a href="#line_57" id="line_57">   57.</a></span><span class="count                ">  76428</span><span>    }</span></pre>
 <pre><span class="lineno"><a href="#line_58" id="line_58">   58.</a></span><span class="count                ">      1</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_59" id="line_59">   59.</a></span><span class="count                ">    489</span><span>    function randomString() {</span></pre>
 <pre><span class="lineno"><a href="#line_60" id="line_60">   60.</a></span><span class="count                ">    489</span><span>        var str = '',</span></pre>
 <pre><span class="lineno"><a href="#line_61" id="line_61">   61.</a></span><span class="count                ">    489</span><span>        i;</span></pre>
 <pre><span class="lineno"><a href="#line_62" id="line_62">   62.</a></span><span class="count                ">    489</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_63" id="line_63">   63.</a></span><span class="count                ">  70939</span><span>        for (i = Math.random() * 300; i &gt; 0; i--) {</span></pre>
-<pre><span class="lineno"><a href="#line_64" id="line_64">   64.</a></span><span class="count                ">  70939</span><span>            str += random_utf8();</span></pre>
-<pre><span class="lineno"><a href="#line_65" id="line_65">   65.</a></span><span class="count                ">  70939</span><span>        }</span></pre>
+<pre><span class="lineno"><a href="#line_63" id="line_63">   63.</a></span><span class="count                ">  76428</span><span>        for (i = Math.random() * 300; i &gt; 0; i--) {</span></pre>
+<pre><span class="lineno"><a href="#line_64" id="line_64">   64.</a></span><span class="count                ">  76428</span><span>            str += random_utf8();</span></pre>
+<pre><span class="lineno"><a href="#line_65" id="line_65">   65.</a></span><span class="count                ">  76428</span><span>        }</span></pre>
 <pre><span class="lineno"><a href="#line_66" id="line_66">   66.</a></span><span class="count                ">    489</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_67" id="line_67">   67.</a></span><span class="count                ">    489</span><span>        return str;</span></pre>
 <pre><span class="lineno"><a href="#line_68" id="line_68">   68.</a></span><span class="count                ">    489</span><span>    }</span></pre>
