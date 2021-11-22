@@ -1,16 +1,26 @@
 # Changelog
 
 # Todo
-- ci - deprecate/remove jslint.cjs from ci
 - cli - remove cli-option `--mode-vim-plugin`
 - coverage - add macros `/*coverage-disable*/` and `/*coverage-enable*/`.
+- coverage - support globbing `*` in cli-options `--exclude` and `--include`
 - jslint - add html and css linting back into jslint.
-- jslint - add new warning requiring paren around comma-separated concatenations.
-- jslint - add top-level-await support
-- jslint - unify analysis of variable-assignment/function-parameters into one function
+- jslint - add new warning requiring paren around plus-separated concatenations.
+- jslint - add numeric-separators support.
+- jslint - relax warning against console.log and friends and deprecate directive `devel`
 - jslint - require regexp to use open-form.
 - jslint - try to improve parser to be able to parse jquery.js without stopping.
+- jslint - unify analysis of variable-assignment/function-parameters into one function
 - node - after node-v14 is deprecated, remove shell-code `export "NODE_OPTIONS=--unhandled-rejections=strict"`.
+- perf - improve performance by hoisting inlined regexps out of loops and subfunctions
+
+# v2021.11.20
+- jslint - add top-level-await support
+- ci - deprecate/remove jslint.cjs from ci
+- coverage - add cli-options `--exclude=aa,bb`, `--exclude-node-modules=false`, `--include=aa,bb`
+- coverage - dedupe coverage-logic now applied when only one script passed
+- npm - add file .npmignore
+- website - add clickable-links to editor-code in report-warnings and report-functions
 
 # v2021.10.20
 - ci - add release-trigger to publish to `@jslint-org/jslint`

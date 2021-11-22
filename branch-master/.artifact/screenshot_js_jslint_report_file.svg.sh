@@ -1,7 +1,7 @@
 (set -e
 printf '> #!/bin/sh
 > 
-> node --input-type=module -e '"'"'
+> node --input-type=module --eval '"'"'
 > 
 > /*jslint devel*/
 > import jslint from "./jslint.mjs";
@@ -27,7 +27,7 @@ printf '> #!/bin/sh
 '
 #!/bin/sh
 
-node --input-type=module -e '
+node --input-type=module --eval '
 
 /*jslint devel*/
 import jslint from "./jslint.mjs";
@@ -47,5 +47,5 @@ import fs from "fs";
     console.error("wrote file .artifact/jslint_report_hello.html");
 }());
 
-' 2>&1 | head -n 100
+' 2>&1 | head -n 32
 )
