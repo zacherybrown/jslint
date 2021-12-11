@@ -11,13 +11,13 @@
     textLength="768"
     x="10"
     y="32"
-> 0.  755  2021-11-21T06:58:32Z  1367 KB  .                                                       </tspan>
+> 0.  755  2021-12-11T09:57:48Z  1370 KB  .                                                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="54"
-> 1.  644  2021-11-05T14:34:24Z     9 KB  .ci.sh                                                  </tspan>
+> 1.  644  2021-12-11T09:57:48Z     9 KB  .ci.sh                                                  </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -47,7 +47,7 @@
     textLength="768"
     x="10"
     y="164"
-> 6.  644  2021-10-20T08:27:27Z     2 KB  .github/workflows/ci.yml                                </tspan>
+> 6.  644  2021-12-11T09:57:48Z     2 KB  .github/workflows/ci.yml                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -59,7 +59,7 @@
     textLength="768"
     x="10"
     y="208"
-> 8.  644  2021-10-20T17:50:27Z     2 KB  .github/workflows/publish.yml                           </tspan>
+> 8.  644  2021-12-11T09:57:48Z     2 KB  .github/workflows/publish.yml                           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -71,13 +71,13 @@
     textLength="768"
     x="10"
     y="252"
->10.  644  2021-11-03T16:46:41Z     1 KB  .npmignore                                              </tspan>
+>10.  644  2021-12-11T09:57:48Z     1 KB  .npmignore                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="274"
->11.  644  2021-11-21T06:42:00Z    13 KB  CHANGELOG.md                                            </tspan>
+>11.  644  2021-12-11T09:57:48Z    14 KB  CHANGELOG.md                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -149,7 +149,7 @@
     textLength="768"
     x="10"
     y="538"
->23.  644  2021-11-21T06:42:00Z   314 KB  jslint.mjs                                              </tspan>
+>23.  644  2021-12-11T09:57:48Z   315 KB  jslint.mjs                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -161,19 +161,19 @@
     textLength="768"
     x="10"
     y="582"
->25.  644  2021-11-21T06:38:19Z    76 KB  jslint_ci.sh                                            </tspan>
+>25.  644  2021-12-11T09:57:48Z    78 KB  jslint_ci.sh                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="604"
->26.  644  2021-11-21T06:58:32Z     1 KB  package.json                                            </tspan>
+>26.  644  2021-12-11T09:57:48Z     1 KB  package.json                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="626"
->27.  644  2021-11-21T06:38:19Z    33 KB  test.mjs                                                </tspan>
+>27.  644  2021-12-11T09:57:48Z    33 KB  test.mjs                                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
