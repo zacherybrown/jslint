@@ -62,5 +62,5 @@ import jslint from "../jslint.mjs";
     });
 }());
 
-' 2>&1 | head -n 32
+'
 )

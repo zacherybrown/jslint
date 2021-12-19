@@ -40,5 +40,5 @@ node ../jslint.mjs \
     --exclude-node-modules=true \
     --exclude=test/foo.js,test/bar.js \
     --exclude=test/baz.js \
-    npm run test 2>&1 | head -n 32
+    npm run test
 )
