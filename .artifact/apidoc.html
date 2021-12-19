@@ -67,7 +67,7 @@ body {
 </head>
 <body>
 <div class="apidocDiv">
-<h1>API Doc for <a href="https://github.com/jslint-org/jslint">JSLint (v2021.11.20)</a></h1>
+<h1>API Doc for <a href="https://github.com/jslint-org/jslint">JSLint (v2021.12.1-beta)</a></h1>
 <div class="apidocSectionDiv">
     <a href="#apidocTableOfContents1" id="apidocTableOfContents1">
         <h1>Table of Contents</h1>
@@ -358,13 +358,16 @@ jstestDescribe((
 <span class="apidocCodeCommentSpan">
 // This function will assert JSON.stringify(&lt;aa&gt;) === JSON.stringify(&lt;bb&gt;).
 
-</span>    aa = JSON.stringify(objectDeepCopyWithKeysSorted(aa));
-    bb = JSON.stringify(objectDeepCopyWithKeysSorted(bb));
+</span>    aa = JSON.stringify(objectDeepCopyWithKeysSorted(aa), undefined, 1);
+    bb = JSON.stringify(objectDeepCopyWithKeysSorted(bb), undefined, 1);
     if (aa !== bb) {
         throw new Error(
-            JSON.stringify(aa) + " !== " + JSON.stringify(bb) + (
-                message
+            "\n" + aa + "\n!==\n" + bb
+            + (
+                typeof message === "string"
                 ? " - " + message
+                : message
+                ? " - " + JSON.stringify(message)
                 : ""
             )
         );
@@ -408,10 +411,10 @@ jstestDescribe((
     }
 }</pre></li>
 <li>Example usage:<pre class="apidocCodePre">...
-        assertJsonEqual(1, 2);
+        assertJsonEqual(1, 2, "undefined");
     });
     await assertErrorThrownAsync(function () {
-        assertJsonEqual(1, 2, "undefined");
+        assertJsonEqual(1, 2, {});
     });
     // test assertOrThrow's error handling-behavior
     await assertErrorThrownAsync(function () {
