@@ -1,6 +1,6 @@
 *
 .*
-
 !.npmignore
+
+!jslint.cjs
 !jslint.mjs
-!jslint.vim

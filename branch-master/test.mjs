@@ -1,7 +1,8 @@
 /*jslint beta, node*/
+import jslint from "./jslint.mjs";
+import jslintCjs from "./jslint.cjs";
 import moduleFs from "fs";
 import modulePath from "path";
-import jslint from "./jslint.mjs";
 
 let {
     assertErrorThrownAsync,
@@ -315,7 +316,25 @@ try {
             )
         ],
         loop: [
-            "function aa() {\n    do {\n        aa();\n    } while (aa());\n}"
+            (
+                "function aa() {\n"
+                + "    do {\n"
+                + "        aa();\n"
+                + "    } while (aa());\n"
+                + "}\n"
+            ),
+
+// PR-378 - Relax warning "function_in_loop".
+
+            (
+                "function aa() {\n"
+                + "    while (true) {\n"
+                + "        (function () {\n"
+                + "            return;\n"
+                + "        }());\n"
+                + "    }\n"
+                + "}\n"
+            )
         ],
         module: [
             "export default Object.freeze();",
@@ -415,13 +434,18 @@ try {
                 elemPrv, code
             ], undefined, 4));
             elemPrv = code;
-            warnings = jslint.jslint(code, {
-                beta: true
-            }).warnings;
-            assertOrThrow(
-                warnings.length === 0,
-                JSON.stringify([code, warnings])
-            );
+            [
+                jslint.jslint,
+                jslintCjs.jslint
+            ].forEach(function (jslint) {
+                warnings = jslint.jslint(code, {
+                    beta: true
+                }).warnings;
+                assertOrThrow(
+                    warnings.length === 0,
+                    JSON.stringify([code, warnings])
+                );
+            });
         });
     });
 }());
@@ -549,6 +573,9 @@ try {
     assertOrThrow(jslint.jslint("", {
         test_internal_error: true
     }).warnings.length === 1);
+    assertOrThrow(jslintCjs.jslint("", {
+        test_internal_error: true
+    }).warnings.length === 1);
 }());
 
 (async function testcaseJslintWarningsValidate() {
@@ -624,6 +651,9 @@ try {
     });
     await assertErrorThrownAsync(function () {
         assertJsonEqual(1, 2, "undefined");
+    });
+    await assertErrorThrownAsync(function () {
+        assertJsonEqual(1, 2, {});
     });
     // test assertOrThrow's error handling-behavior
     await assertErrorThrownAsync(function () {
