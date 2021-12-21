@@ -1,5 +1,5 @@
-<svg height="668" width="800" xmlns="http://www.w3.org/2000/svg">
-<rect height="668" fill="#222" width="800"></rect>
+<svg height="690" width="800" xmlns="http://www.w3.org/2000/svg">
+<rect height="690" fill="#222" width="800"></rect>
 <text
     fill="#7f7"
     font-family="consolas, menlo, monospace"
@@ -11,7 +11,7 @@
     textLength="768"
     x="10"
     y="32"
-> 0.  755  2021-12-20T22:04:17Z  1370 KB  .                                                       </tspan>
+> 0.  755  2021-12-21T00:00:57Z  1371 KB  .                                                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -71,13 +71,13 @@
     textLength="768"
     x="10"
     y="252"
->10.  644  2021-12-19T01:10:46Z     1 KB  .npmignore                                              </tspan>
+>10.  644  2021-12-21T00:00:57Z     1 KB  .npmignore                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="274"
->11.  644  2021-12-20T22:04:17Z    14 KB  CHANGELOG.md                                            </tspan>
+>11.  644  2021-12-21T00:00:57Z    14 KB  CHANGELOG.md                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -149,37 +149,43 @@
     textLength="768"
     x="10"
     y="538"
->23.  644  2021-12-20T22:04:17Z   315 KB  jslint.mjs                                              </tspan>
+>23.  644  2021-12-21T00:00:57Z     1 KB  jslint.cjs                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="560"
->24.  644  2021-10-07T22:14:10Z     1 KB  jslint.vim                                              </tspan>
+>24.  644  2021-12-20T22:04:17Z   315 KB  jslint.mjs                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="582"
->25.  644  2021-12-19T01:10:46Z    78 KB  jslint_ci.sh                                            </tspan>
+>25.  644  2021-10-07T22:14:10Z     1 KB  jslint.vim                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="604"
->26.  644  2021-12-20T22:04:17Z     1 KB  package.json                                            </tspan>
+>26.  644  2021-12-19T01:10:46Z    78 KB  jslint_ci.sh                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="626"
->27.  644  2021-12-19T01:10:46Z    33 KB  test.mjs                                                </tspan>
+>27.  644  2021-12-21T00:00:57Z     1 KB  package.json                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="648"
->28.  644  2021-10-12T00:21:08Z   319 KB  test_coverage_merge_data.json                           </tspan>
+>28.  644  2021-12-21T00:00:57Z    33 KB  test.mjs                                                </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="670"
+>29.  644  2021-10-12T00:21:08Z   319 KB  test_coverage_merge_data.json                           </tspan>
 
 </text>
 </svg>
