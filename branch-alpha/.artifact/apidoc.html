@@ -951,6 +951,9 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
                                 // ... literal.
     let mode_regexp;            // true if regular expression literal seen on
                                 // ... this line.
+    let paren_backtrack_list = [];      // List of most recent "(" tokens at any
+                                        // ... paren-depth.
+    let paren_depth = 0;                // Keeps track of current paren-depth.
     let rx_token = new RegExp(
         "^("
         + "(\\s+)"
@@ -968,17 +971,7 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
         + "|\\"
         + "|[|=]?"
         + "|&gt;{1,3}=?"
-        + "|&lt;&lt;?=?"
-        + "|!(?:!|==?)?"
-
-// PR-351 - Add BigInt support.
-
-        + "|(0n?|[1-9][0-9]*n?)"
-        + ")"
-        + "(.*)$"
-    );
-    let snippet = "";           // A piece of string.
-    let token_1;               ...
+        + "|&lt;&lt;?...
 }
 </pre></li>
 <li>Example usage:<pre class="apidocCodePre">...
