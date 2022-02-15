@@ -383,7 +383,7 @@
     textLength="768"
     x="10"
     y="1396"
->    ✓ should return the correct lastID (204ms)                                                   </tspan>
+>    ✓ should return the correct lastID (131ms)                                                   </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
