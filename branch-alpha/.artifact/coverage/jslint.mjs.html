@@ -1886,13 +1886,13 @@ body {
 <pre><span class="lineno"><a href="#line_1738" id="line_1738"> 1738.</a></span><span class="count                ">      4</span><span>            data = await moduleFs.promises.readdir(file, "utf8");</span></pre>
 <pre><span class="lineno"><a href="#line_1739" id="line_1739"> 1739.</a></span><span class="count                ">      4</span><span>        } catch (ignore) {}</span></pre>
 <pre><span class="lineno"><a href="#line_1740" id="line_1740"> 1740.</a></span><span class="count                ">      4</span><span>        if (data) {</span></pre>
-<pre><span class="lineno"><a href="#line_1741" id="line_1741"> 1741.</a></span><span class="count                ">     28</span><span>            await Promise.all(data.map(async function (file2) {</span></pre>
-<pre><span class="lineno"><a href="#line_1742" id="line_1742"> 1742.</a></span><span class="count                ">     28</span><span>                let code;</span></pre>
-<pre><span class="lineno"><a href="#line_1743" id="line_1743"> 1743.</a></span><span class="count                ">     28</span><span>                let time_start = Date.now();</span></pre>
-<pre><span class="lineno"><a href="#line_1744" id="line_1744"> 1744.</a></span><span class="count                ">     28</span><span>                file2 = file + "/" + file2;</span></pre>
-<pre><span class="lineno"><a href="#line_1745" id="line_1745"> 1745.</a></span><span class="count                ">     28</span><span>                switch ((</span></pre>
-<pre><span class="lineno"><a href="#line_1746" id="line_1746"> 1746.</a></span><span class="count                ">     28</span><span>                    /\.\w+?$|$/m</span></pre>
-<pre><span class="lineno"><a href="#line_1747" id="line_1747"> 1747.</a></span><span class="count                ">     28</span><span>                ).exec(file2)[0]) {</span></pre>
+<pre><span class="lineno"><a href="#line_1741" id="line_1741"> 1741.</a></span><span class="count                ">     29</span><span>            await Promise.all(data.map(async function (file2) {</span></pre>
+<pre><span class="lineno"><a href="#line_1742" id="line_1742"> 1742.</a></span><span class="count                ">     29</span><span>                let code;</span></pre>
+<pre><span class="lineno"><a href="#line_1743" id="line_1743"> 1743.</a></span><span class="count                ">     29</span><span>                let time_start = Date.now();</span></pre>
+<pre><span class="lineno"><a href="#line_1744" id="line_1744"> 1744.</a></span><span class="count                ">     29</span><span>                file2 = file + "/" + file2;</span></pre>
+<pre><span class="lineno"><a href="#line_1745" id="line_1745"> 1745.</a></span><span class="count                ">     29</span><span>                switch ((</span></pre>
+<pre><span class="lineno"><a href="#line_1746" id="line_1746"> 1746.</a></span><span class="count                ">     29</span><span>                    /\.\w+?$|$/m</span></pre>
+<pre><span class="lineno"><a href="#line_1747" id="line_1747"> 1747.</a></span><span class="count                ">     29</span><span>                ).exec(file2)[0]) {</span></pre>
 <pre><span class="lineno"><a href="#line_1748" id="line_1748"> 1748.</a></span><span class="count                ">      4</span><span>                case ".cjs":</span></pre>
 <pre><span class="lineno"><a href="#line_1749" id="line_1749"> 1749.</a></span><span class="count                ">      4</span><span>                case ".html":</span></pre>
 <pre><span class="lineno"><a href="#line_1750" id="line_1750"> 1750.</a></span><span class="count                ">      5</span><span>                case ".js":</span></pre>
@@ -1901,8 +1901,8 @@ body {
 <pre><span class="lineno"><a href="#line_1753" id="line_1753"> 1753.</a></span><span class="count                ">     11</span><span>                case ".mjs":</span></pre>
 <pre><span class="lineno"><a href="#line_1754" id="line_1754"> 1754.</a></span><span class="count                ">     13</span><span>                case ".sh":</span></pre>
 <pre><span class="lineno"><a href="#line_1755" id="line_1755"> 1755.</a></span><span class="count                ">     13</span><span>                    break;</span></pre>
-<pre><span class="lineno"><a href="#line_1756" id="line_1756"> 1756.</a></span><span class="count                ">     15</span><span>                default:</span></pre>
-<pre><span class="lineno"><a href="#line_1757" id="line_1757"> 1757.</a></span><span class="count                ">     15</span><span>                    return;</span></pre>
+<pre><span class="lineno"><a href="#line_1756" id="line_1756"> 1756.</a></span><span class="count                ">     16</span><span>                default:</span></pre>
+<pre><span class="lineno"><a href="#line_1757" id="line_1757"> 1757.</a></span><span class="count                ">     16</span><span>                    return;</span></pre>
 <pre><span class="lineno"><a href="#line_1758" id="line_1758"> 1758.</a></span><span class="count                ">     13</span><span>                }</span></pre>
 <pre><span class="lineno"><a href="#line_1759" id="line_1759"> 1759.</a></span><span class="count                ">     13</span><span>                try {</span></pre>
 <pre><span class="lineno"><a href="#line_1760" id="line_1760"> 1760.</a></span><span class="count                ">     13</span><span>                    code = await moduleFs.promises.readFile(file2, "utf8");</span></pre>
@@ -10993,13 +10993,13 @@ body {
 <pre><span class="lineno"><a href="#line_10845" id="line_10845">10845.</a></span><span class="count                ">      7</span><span>    v8CoverageObj = await Promise.all(v8CoverageObj.map(async function (file) {</span></pre>
 <pre><span class="lineno"><a href="#line_10846" id="line_10846">10846.</a></span><span class="count                ">      7</span><span>        let data = await moduleFs.promises.readFile(coverageDir + file, "utf8");</span></pre>
 <pre><span class="lineno"><a href="#line_10847" id="line_10847">10847.</a></span><span class="count                ">      7</span><span>        data = JSON.parse(data);</span></pre>
-<pre><span class="lineno"><a href="#line_10848" id="line_10848">10848.</a></span><span class="count                ">    752</span><span>        data.result = data.result.filter(function (scriptCov) {</span></pre>
-<pre><span class="lineno"><a href="#line_10849" id="line_10849">10849.</a></span><span class="count                ">    752</span><span>            let pathname = scriptCov.url;</span></pre>
-<pre><span class="lineno"><a href="#line_10850" id="line_10850">10850.</a></span><span class="count                ">    752</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_10851" id="line_10851">10851.</a></span><span class="count                ">    752</span><span>// Filter out internal coverages.</span></pre>
-<pre><span class="lineno"><a href="#line_10852" id="line_10852">10852.</a></span><span class="count                ">    752</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_10853" id="line_10853">10853.</a></span><span class="count                ">    366</span><span>            if (!pathname.startsWith("file:///")) {</span></pre>
-<pre><span class="lineno"><a href="#line_10854" id="line_10854">10854.</a></span><span class="count                ">    366</span><span>                return;</span></pre>
+<pre><span class="lineno"><a href="#line_10848" id="line_10848">10848.</a></span><span class="count                ">    761</span><span>        data.result = data.result.filter(function (scriptCov) {</span></pre>
+<pre><span class="lineno"><a href="#line_10849" id="line_10849">10849.</a></span><span class="count                ">    761</span><span>            let pathname = scriptCov.url;</span></pre>
+<pre><span class="lineno"><a href="#line_10850" id="line_10850">10850.</a></span><span class="count                ">    761</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10851" id="line_10851">10851.</a></span><span class="count                ">    761</span><span>// Filter out internal coverages.</span></pre>
+<pre><span class="lineno"><a href="#line_10852" id="line_10852">10852.</a></span><span class="count                ">    761</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10853" id="line_10853">10853.</a></span><span class="count                ">    375</span><span>            if (!pathname.startsWith("file:///")) {</span></pre>
+<pre><span class="lineno"><a href="#line_10854" id="line_10854">10854.</a></span><span class="count                ">    375</span><span>                return;</span></pre>
 <pre><span class="lineno"><a href="#line_10855" id="line_10855">10855.</a></span><span class="count                ">    386</span><span>            }</span></pre>
 <pre><span class="lineno"><a href="#line_10856" id="line_10856">10856.</a></span><span class="count                ">    386</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_10857" id="line_10857">10857.</a></span><span class="count                ">    386</span><span>// Normalize pathname.</span></pre>
@@ -11011,22 +11011,22 @@ body {
 <pre><span class="lineno"><a href="#line_10863" id="line_10863">10863.</a></span><span class="count                ">    386</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_10864" id="line_10864">10864.</a></span><span class="count                ">    386</span><span>                !pathname</span></pre>
 <pre><span class="lineno"><a href="#line_10865" id="line_10865">10865.</a></span><span class="count                ">    386</span><span>                || pathname.startsWith("[")</span></pre>
-<pre><span class="lineno"><a href="#line_10866" id="line_10866">10866.</a></span><span class="count                ">    752</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_10867" id="line_10867">10867.</a></span><span class="count                ">    752</span><span>// PR-371 - Filter directory node_modules.</span></pre>
-<pre><span class="lineno"><a href="#line_10868" id="line_10868">10868.</a></span><span class="count                ">    752</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10866" id="line_10866">10866.</a></span><span class="count                ">    761</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10867" id="line_10867">10867.</a></span><span class="count                ">    761</span><span>// PR-371 - Filter directory node_modules.</span></pre>
+<pre><span class="lineno"><a href="#line_10868" id="line_10868">10868.</a></span><span class="count                ">    761</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_10869" id="line_10869">10869.</a></span><span class="count                ">      7</span><span>                || (</span></pre>
 <pre><span class="lineno"><a href="#line_10870" id="line_10870">10870.</a></span><span class="count                ">      7</span><span>                    !fileIncludeNodeModules</span></pre>
 <pre><span class="lineno"><a href="#line_10871" id="line_10871">10871.</a></span><span class="count                ">      7</span><span>                    &amp;&amp; (</span></pre>
 <pre><span class="lineno"><a href="#line_10872" id="line_10872">10872.</a></span><span class="count                ">      7</span><span>                        /(?:^|\/)node_modules\//m</span></pre>
 <pre><span class="lineno"><a href="#line_10873" id="line_10873">10873.</a></span><span class="count                ">      7</span><span>                    ).test(pathname)</span></pre>
 <pre><span class="lineno"><a href="#line_10874" id="line_10874">10874.</a></span><span class="count                ">      7</span><span>                )</span></pre>
-<pre><span class="lineno"><a href="#line_10875" id="line_10875">10875.</a></span><span class="count                ">    752</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_10876" id="line_10876">10876.</a></span><span class="count                ">    752</span><span>// PR-371 - Filter fileExcludeList.</span></pre>
-<pre><span class="lineno"><a href="#line_10877" id="line_10877">10877.</a></span><span class="count                ">    752</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10875" id="line_10875">10875.</a></span><span class="count                ">    761</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10876" id="line_10876">10876.</a></span><span class="count                ">    761</span><span>// PR-371 - Filter fileExcludeList.</span></pre>
+<pre><span class="lineno"><a href="#line_10877" id="line_10877">10877.</a></span><span class="count                ">    761</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_10878" id="line_10878">10878.</a></span><span class="count                ">      7</span><span>                || fileExcludeList.indexOf(pathname) &gt;= 0</span></pre>
-<pre><span class="lineno"><a href="#line_10879" id="line_10879">10879.</a></span><span class="count                ">    752</span><span></span></pre>
-<pre><span class="lineno"><a href="#line_10880" id="line_10880">10880.</a></span><span class="count                ">    752</span><span>// PR-371 - Filter fileIncludeList.</span></pre>
-<pre><span class="lineno"><a href="#line_10881" id="line_10881">10881.</a></span><span class="count                ">    752</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10879" id="line_10879">10879.</a></span><span class="count                ">    761</span><span></span></pre>
+<pre><span class="lineno"><a href="#line_10880" id="line_10880">10880.</a></span><span class="count                ">    761</span><span>// PR-371 - Filter fileIncludeList.</span></pre>
+<pre><span class="lineno"><a href="#line_10881" id="line_10881">10881.</a></span><span class="count                ">    761</span><span></span></pre>
 <pre><span class="lineno"><a href="#line_10882" id="line_10882">10882.</a></span><span class="count                ">      7</span><span>                || (</span></pre>
 <pre><span class="lineno"><a href="#line_10883" id="line_10883">10883.</a></span><span class="count                ">      7</span><span>                    fileIncludeList.length &gt; 0</span></pre>
 <pre><span class="lineno"><a href="#line_10884" id="line_10884">10884.</a></span><span class="count                ">      7</span><span>                    &amp;&amp; fileIncludeList.indexOf(pathname) === -1</span></pre>
