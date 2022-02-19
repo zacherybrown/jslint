@@ -1,4 +1,5 @@
 "" jslint_wrapper_vim.vim
+""
 "" jslint wrapper for vim
 ""
 "" 1. Save this file and "jslint.mjs" to directory "~/.vim/"
@@ -13,7 +14,7 @@ function! SaveAndJslint(bang)
     if a:bang == "!" | write! | else | write | endif
     "" jslint file (via nodejs)
     let &l:errorformat = "%f:%n:%l:%c:%m"
-    let &l:makeprg = "node \"" . $HOME . "/.vim/jslint.mjs\" --mode-vim-wrapper"
+    let &l:makeprg = "node \"" . $HOME . "/.vim/jslint.mjs\" jslint_wrapper_vim"
         \ . " \"" . fnamemodify(bufname("%"), ":p") . "\""
     silent make! | cwindow | redraw!
 endfunction
