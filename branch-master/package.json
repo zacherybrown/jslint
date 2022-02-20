@@ -5,7 +5,7 @@
     "counter": 7,
     "description": "JSLint, The JavaScript Code Quality and Coverage Tool",
     "exports": {
-        "default": "./jslint.cjs",
+        "default": "./jslint_wrapper_cjs.cjs",
         "import": "./jslint.mjs"
     },
     "fileCount": 28,
@@ -17,7 +17,7 @@
         "zero-dependency"
     ],
     "license": "UNLICENSE",
-    "main": "./jslint.cjs",
+    "main": "./jslint_wrapper_cjs.cjs",
     "module": "./jslint.mjs",
     "name": "@jslint-org/jslint",
     "repository": {
@@ -29,5 +29,5 @@
         "test2": "sh jslint_ci.sh shCiBase"
     },
     "type": "module",
-    "version": "2021.12.20"
+    "version": "2022.2.20"
 }
