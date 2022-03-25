@@ -29,109 +29,109 @@
     textLength="768"
     x="10"
     y="98"
->- jslint - add numeric-separators support                                                        </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="120"
->- jslint - move regexp-literals to module-level so they are explicitly cached, to improve perfor\</tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="142"
->  mance                                                                                          </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="164"
 >- cli - remove cli-option `--mode-vim-plugin`                                                    </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="186"
+    y="120"
 >- coverage - add macros `/*coverage-disable*/` and `/*coverage-enable*/`.                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="208"
+    y="142"
 >- coverage - support globbing `*` in cli-options `--exclude` and `--include`                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="230"
+    y="164"
 >- jslint - add html and css linting back into jslint.                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="252"
+    y="186"
 >- jslint - add new warning requiring paren around plus-separated concatenations.                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="274"
+    y="208"
 >- jslint - relax warning against console.log and friends and deprecate directive `devel`         </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="296"
+    y="230"
 >- jslint - require regexp to use open-form.                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="318"
+    y="252"
 >- jslint - try to improve parser to be able to parse jquery.js without stopping.                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="340"
+    y="274"
 >- jslint - unify analysis of variable-assignment/function-parameters into one function           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="362"
+    y="296"
 >- jslint - add new warning "Expected Object.create(null) instead of {}"                          </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="384"
+    y="318"
 >- node - after node-v14 is deprecated, remove shell-code `export "NODE_OPTIONS=--unhandled-rejec\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="406"
+    y="340"
 >  tions=strict"`.                                                                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="428"
+    y="362"
 >- perf - improve performance by hoisting inlined regexps out of loops and subfunctions           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="450"
+    y="384"
 >                                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="472"
+    y="406"
 ># v2022.3.1-beta                                                                                 </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="428"
+>- jslint - add numeric-separator support                                                         </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="450"
+>- jslint - move regexp-literals to module-level so they are explicitly cached, to improve perfor\</tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="472"
+>  mance                                                                                          </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
