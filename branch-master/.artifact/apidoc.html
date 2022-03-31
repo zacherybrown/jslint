@@ -67,7 +67,7 @@ body {
 </head>
 <body>
 <div class="apidocDiv">
-<h1>API Doc for <a href="https://github.com/jslint-org/jslint">JSLint (v2022.2.20)</a></h1>
+<h1>API Doc for <a href="https://github.com/jslint-org/jslint">JSLint (v2022.3.30)</a></h1>
 <div class="apidocSectionDiv">
     <a href="#apidocTableOfContents1" id="apidocTableOfContents1">
         <h1>Table of Contents</h1>
@@ -569,10 +569,7 @@ await jslint.jslint_cli({
     let import_list = [];       // The array collecting all import-from strings.
     let line_list = String(     // The array containing source lines.
         "\n" + source
-    ).split(
-        // rx_crlf
-        /\n|\r\n?/
-    ).map(function (line_source) {
+    ).split(jslint_rgx_crlf).map(function (line_source) {
         return {
             line_source
         };
@@ -588,7 +585,9 @@ await jslint.jslint_cli({
         async: 0,
         body: true,
         context: empty(),
-        f...
+        finally: 0,
+        from: 0,
+...
 }
 </pre></li>
 <li>Example usage:<pre class="apidocCodePre">...
@@ -945,6 +944,8 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
     let line_mega;              // The starting line of megastring.
     let line_source = "";       // The remaining line source string.
     let line_whole = "";        // The whole line source string.
+    let mode_digits_empty_string = 1;
+    let mode_digits_numeric_separator = 2;
     let mode_directive = true;  // true if directives are still allowed.
     let mode_mega = false;      // true if currently parsing a megastring
                                 // ... literal.
@@ -952,25 +953,13 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
                                 // ... this line.
     let paren_backtrack_list = [];      // List of most recent "(" tokens at any
                                         // ... paren-depth.
-    let paren_depth = 0;                // Keeps track of current paren-depth.
-    let rx_token = new RegExp(
-        "^("
-        + "(\\s+)"
-        + "|([a-zA-Z_$][a-zA-Z0-9_$]*)"
-        + "|[(){}\\[\\],:;'\"~\\`]"
-        + "|\\?[?.]?"
-        + "|=(?:==?|&gt;)?"
-        + "|\\.+"
-        + "|\\*[*\\/=]?"
-        + "|\\/[*\\/]?"
-        + "|\\+[=+]?"
-        + "|-[=\\-]?"
-        + "|[\\^%]=?"
-        + "|&amp;[&amp;=]?"
-        + "|\\"
-        + "|[|=]?"
-        + "|&gt;{1,3}=?"
-        + "|&lt;&lt;?...
+    let paren_depth = 0;        // Keeps track of current paren-depth.
+    let snippet = "";           // A piece of string.
+    let token_1;                // The first token.
+    let token_prv = token_global;       // The previous token including
+                                        // ... comments.
+    let token_prv_expr = token_global;  // The previous token excluding
+                                        // ... comm...
 }
 </pre></li>
 <li>Example usage:<pre class="apidocCodePre">...
@@ -1041,9 +1030,6 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
     let catchage = catch_stack[0];      // The current catch-block.
     let functionage = token_global;     // The current function.
     let mode_var;               // "var" if using var; "let" if using let.
-    let rx_identifier = (
-        /^([a-zA-Z_$][a-zA-Z0-9_$]*)$/
-    );
     let token_ii = 0;           // The number of the next token.
     let token_now = token_global;       // The current token being examined in
                                         // ... the parse.
@@ -1060,9 +1046,12 @@ await jslint.<span class="apidocCodeKeywordSpan">jslint_cli</span>({
             anon = token_now.id;
         } else if (
             token_now.id === "(string)"
-            &amp;&amp; rx_identifier.test(token_now.value)
+            &amp;&amp; jslint_rgx_identifier.test(token_now.value)
         ) {
-            a...
+            anon = token_now.value;
+        }
+
+// Attempt to match token_nxt ...
 }
 </pre></li>
 <li>Example usage:<pre class="apidocCodePre">...

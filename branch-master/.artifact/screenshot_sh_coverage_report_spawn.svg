@@ -245,7 +245,7 @@
     textLength="768"
     x="10"
     y="890"
->12 vulnerabilities (10 moderate, 2 high)                                                         </tspan>
+>9 vulnerabilities (4 moderate, 5 high)                                                           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -383,7 +383,7 @@
     textLength="768"
     x="10"
     y="1396"
->    ✓ should return the correct lastID (118ms)                                                   </tspan>
+>    ✓ should return the correct lastID (167ms)                                                   </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"

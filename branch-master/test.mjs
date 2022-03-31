@@ -213,23 +213,6 @@ jstestDescribe((
         });
     });
     jstestIt((
-        "test cli-report-misc handling-behavior"
-    ), function () {
-        jslint.jslint_cli({
-            // suppress error
-            console_error: noop,
-            mode_cli: true,
-            process_argv: [
-                "node",
-                "jslint.mjs",
-                "jslint_report=.tmp/jslint_report.html",
-                "aa.js"
-            ],
-            process_exit: processExit1,
-            source: "(aa)=>aa; function aa([aa]){}"
-        });
-    });
-    jstestIt((
         "test cli-report-json-error handling-behavior"
     ), function () {
         jslint.jslint_cli({
@@ -244,6 +227,36 @@ jstestDescribe((
             ],
             process_exit: processExit1,
             source: "["
+        });
+    });
+    jstestIt((
+        "test cli-report-misc handling-behavior"
+    ), function () {
+        jslint.jslint_cli({
+            // suppress error
+            console_error: noop,
+            mode_cli: true,
+            process_argv: [
+                "node",
+                "jslint.mjs",
+                "jslint_report=.tmp/jslint_report.html",
+                "aa.js"
+            ],
+            process_exit: processExit0,
+            source: "let aa = 0;"
+        });
+        jslint.jslint_cli({
+            // suppress error
+            console_error: noop,
+            mode_cli: true,
+            process_argv: [
+                "node",
+                "jslint.mjs",
+                "jslint_report=.tmp/jslint_report.html",
+                "aa.js"
+            ],
+            process_exit: processExit1,
+            source: "(aa)=>aa; function aa([aa]){}"
         });
     });
     jstestIt((
@@ -390,6 +403,16 @@ jstestDescribe((
                 "let aa = 0b0;",
                 "let aa = 0o0;",
                 "let aa = 0x0;"
+            ],
+
+// PR-390 - Add numeric-separator support.
+
+            numeric_separator: [
+                "let aa = 0.0_0_0;",
+                "let aa = 0b0_1111_1111n;\n",
+                "let aa = 0o0_1234_1234n;\n",
+                "let aa = 0x0_1234_1234n;\n",
+                "let aa = 1_234_234.1_234_234E1_234_234;"
             ],
             optional_chaining: [
                 "let aa = aa?.bb?.cc;"
