@@ -15,7 +15,8 @@
 - perf - improve performance by hoisting inlined regexps out of loops and subfunctions
 
 # v2022.5.1-beta
-- bugfix - fix function jstestOnExit() from exiting prematurely and suppressing testcase-error-messages
+- bugfix - fix jslint falsely believing megastring literals `0` and `1` are similar
+- bugfix - fix function jstestOnExit() from exiting prematurely and suppressing additional error-messages
 
 # v2022.3.30
 - website - use localStorage to persist jslint-options selected in ui

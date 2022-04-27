@@ -238,7 +238,7 @@ function jstestIt<span class="apidocSignatureSpan">(description, testFunction, m
 <li>
 
 <a class="apidocElementLiA" href="#apidoc.elem.%22.%2Fjslint.mjs%22.jstestOnExit">19.
-function jstestOnExit<span class="apidocSignatureSpan">(exitCode, processExit, countFailed)</span>
+function jstestOnExit<span class="apidocSignatureSpan">(exitCode, mode)</span>
 </a>
 
 </li>
@@ -1508,18 +1508,18 @@ jstestIt((
 <li>
     <h2>
     <a href="#apidoc.elem.%22.%2Fjslint.mjs%22.jstestOnExit" id="apidoc.elem.%22.%2Fjslint.mjs%22.jstestOnExit">19.
-    function jstestOnExit<span class="apidocSignatureSpan">(exitCode, processExit, countFailed)</span>
+    function jstestOnExit<span class="apidocSignatureSpan">(exitCode, mode)</span>
     </a>
     </h2>
 </li>
-<li>Description and source-code:<pre class="apidocCodePre">function jstestOnExit(exitCode, processExit, countFailed) {
+<li>Description and source-code:<pre class="apidocCodePre">function jstestOnExit(exitCode, mode) {
 <span class="apidocCodeCommentSpan">
 // This function will on process-exit, print test-report
 // and exit with non-zero exit-code if any test failed.
 
 </span>    let message = (
         (
-            (jstestCountFailed || countFailed)
+            (jstestCountFailed || mode === "testsFailed")
             ? "\n\u001b[31m"
             : "\n\u001b[32m"
         )
@@ -1527,9 +1527,8 @@ jstestIt((
         + "  tests failed - " + jstestCountFailed + "\n"
         + "\u001b[39m"
     );
-    if (!processExit) {
+    if (mode !== "testsFailed") {
         console.error(message);
-        processExit = process.exit;
     }
     process.exitCode = exitCode || jstestCountFailed;
     return message;
@@ -1540,9 +1539,9 @@ jstestIt((
     throw new Error();
 }, "pass");
 jstestIt((
-    "test jstestOnExit error handling-behavior"
+    "test jstestOnExit tests-failed handling-behavior"
 ), function () {
-    <span class="apidocCodeKeywordSpan">jstestOnExit</span>(undefined, noop, 1);
+    <span class="apidocCodeKeywordSpan">jstestOnExit</span>(undefined, "testsFailed");
 });
 });
 
