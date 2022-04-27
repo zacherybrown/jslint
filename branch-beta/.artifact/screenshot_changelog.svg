@@ -113,127 +113,127 @@
     textLength="768"
     x="10"
     y="406"
-># v2022.3.30                                                                                     </tspan>
+># v2022.5.1-beta                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="428"
->- website - use localStorage to persist jslint-options selected in ui                            </tspan>
+>- bugfix - fix jslint falsely believing megastring literals `0` and `1` are similar              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="450"
->- website - add optional debug-mode to use sessionStorage to persist jslint-globals and jslint-s\</tspan>
+>- bugfix - fix function jstestOnExit() from exiting prematurely and suppressing additional error\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="472"
->  ource from ui                                                                                  </tspan>
+>  -messages                                                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="494"
->- jslint - add numeric-separator support                                                         </tspan>
+>                                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="516"
->- jslint - move regexp-literals to module-level so they are explicitly cached, to improve perfor\</tspan>
+># v2022.3.30                                                                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="538"
->  mance                                                                                          </tspan>
+>- website - use localStorage to persist jslint-options selected in ui                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="560"
->- ci - add check for package.json.fileCount                                                      </tspan>
+>- website - add optional debug-mode to use sessionStorage to persist jslint-globals and jslint-s\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="582"
->                                                                                                 </tspan>
+>  ource from ui                                                                                  </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="604"
-># v2022.2.20                                                                                     </tspan>
+>- jslint - add numeric-separator support                                                         </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="626"
->- test - migrate all tests to use jstestDescribe(), jstestIt()                                   </tspan>
+>- jslint - move regexp-literals to module-level so they are explicitly cached, to improve perfor\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="648"
->- fs - rename jslint-wrapper-files to jslint_wrapper_xxx.xxx                                     </tspan>
+>  mance                                                                                          </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="670"
->- bugfix - fix issue #382 - make fart-related warnings more readable                             </tspan>
+>- ci - add check for package.json.fileCount                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="692"
->- bugfix - fix issue #382 - fix warnings against destructured fart                               </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="714"
->- bugfix - fix issue #379 - warn against naked-statement in fart.                                </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="736"
->- update commonjs-wrapper jslint.cjs to load jslint in strict-mode.                              </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="758"
 >                                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
+    y="714"
+># v2022.2.20                                                                                     </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="736"
+>- test - migrate all tests to use jstestDescribe(), jstestIt()                                   </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="758"
+>- fs - rename jslint-wrapper-files to jslint_wrapper_xxx.xxx                                     </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
     y="780"
-># v2021.12.20                                                                                    </tspan>
+>- bugfix - fix issue #382 - make fart-related warnings more readable                             </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="802"
->- npm - add file jslint.cjs so package @jslint-org/jslint can be published as dual-module        </tspan>
+>- bugfix - fix issue #382 - fix warnings against destructured fart                               </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="824"
->- jslint - relax warning "function_in_loop"                                                      </tspan>
+>- bugfix - fix issue #379 - warn against naked-statement in fart.                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="846"
->- update function assertJsonEqual to JSON.stringify 3rd param if its an object                   </tspan>
+>- update commonjs-wrapper jslint.cjs to load jslint in strict-mode.                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -245,97 +245,97 @@
     textLength="768"
     x="10"
     y="890"
-># v2021.11.20                                                                                    </tspan>
+># v2021.12.20                                                                                    </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="912"
->- jslint - add top-level-await support                                                           </tspan>
+>- npm - add file jslint.cjs so package @jslint-org/jslint can be published as dual-module        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="934"
->- ci - deprecate/remove jslint.cjs from ci                                                       </tspan>
+>- jslint - relax warning "function_in_loop"                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="956"
->- coverage - add cli-options `--exclude=aa,bb`, `--exclude-node-modules=false`, `--include=aa,bb\</tspan>
+>- update function assertJsonEqual to JSON.stringify 3rd param if its an object                   </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="978"
->  `                                                                                              </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="1000"
->- coverage - dedupe coverage-logic now applied when only one script passed                       </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="1022"
->- npm - add file .npmignore                                                                      </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="1044"
->- website - add clickable-links to editor-code in report-warnings and report-functions           </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="1066"
 >                                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
+    y="1000"
+># v2021.11.20                                                                                    </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="1022"
+>- jslint - add top-level-await support                                                           </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="1044"
+>- ci - deprecate/remove jslint.cjs from ci                                                       </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="1066"
+>- coverage - add cli-options `--exclude=aa,bb`, `--exclude-node-modules=false`, `--include=aa,bb\</tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
     y="1088"
-># v2021.10.20                                                                                    </tspan>
+>  `                                                                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1110"
->- ci - add release-trigger to publish to `@jslint-org/jslint`                                    </tspan>
+>- coverage - dedupe coverage-logic now applied when only one script passed                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1132"
->- bugfix - fix coverage-report having incorrect http-link to index.html                          </tspan>
+>- npm - add file .npmignore                                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1154"
->- bugfix - fix false warning `uninitialized 'bb'` in code `/*jslint node*/\nlet {aa:bb} = {}; bb\</tspan>
+>- website - add clickable-links to editor-code in report-warnings and report-functions           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1176"
->  ();`                                                                                           </tspan>
+>                                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1198"
->- bugfix - fix issue #358 - switch-statement crashes jslint                                      </tspan>
+># v2021.10.20                                                                                    </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1220"
->- ci - cache coverage-example node-sqlite3 to speed up ci                                        </tspan>
+>- ci - add release-trigger to publish to `@jslint-org/jslint`                                    </tspan>
 
 </text>
 </svg>
