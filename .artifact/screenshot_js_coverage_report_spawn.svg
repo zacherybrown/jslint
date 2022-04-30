@@ -209,25 +209,25 @@
     textLength="768"
     x="10"
     y="758"
->npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its suc\</tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="780"
->  cessor.                                                                                        </tspan>
-<tspan
-    lengthAdjust="spacingAndGlyphs"
-    textLength="768"
-    x="10"
-    y="802"
 >npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
-    y="824"
+    y="780"
 >   use the URLSearchParams API instead.                                                          </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="802"
+>npm WARN deprecated circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its suc\</tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="824"
+>  cessor.                                                                                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
@@ -425,7 +425,7 @@
     textLength="768"
     x="10"
     y="1550"
->added 245 packages, and audited 246 packages in 12s                                              </tspan>
+>added 245 packages, and audited 246 packages in 14s                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
