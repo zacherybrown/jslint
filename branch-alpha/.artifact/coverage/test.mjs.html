@@ -5,9 +5,19 @@
 <style>
 /* jslint utility2:true */
 /*csslint ignore:start*/
-* {
-box-sizing: border-box;
-    font-family: consolas, menlo, monospace;
+.coverage,
+.coverage a,
+.coverage div,
+.coverage pre,
+.coverage span,
+.coverage table,
+.coverage tbody,
+.coverage td,
+.coverage th,
+.coverage thead,
+.coverage tr {
+    box-sizing: border-box;
+    font-family: monospace;
 }
 /*csslint ignore:end*/
 
@@ -238,21 +248,21 @@ body {
 <pre><span class="lineno"><a href="#line_90" id="line_90">   90.</a></span><span class="count                ">      1</span><span>        });</span></pre>
 <pre><span class="lineno"><a href="#line_91" id="line_91">   91.</a></span><span class="count                ">      1</span><span>    });</span></pre>
 <pre><span class="lineno"><a href="#line_92" id="line_92">   92.</a></span><span class="count                ">      1</span><span>    jstestIt((</span></pre>
-<pre><span class="lineno"><a href="#line_93" id="line_93">   93.</a></span><span class="count                ">      1</span><span>        "test cli-export-global handling-behavior"</span></pre>
+<pre><span class="lineno"><a href="#line_93" id="line_93">   93.</a></span><span class="count                ">      1</span><span>        "test cli-window-jslint handling-behavior"</span></pre>
 <pre><span class="lineno"><a href="#line_94" id="line_94">   94.</a></span><span class="count                ">      1</span><span>    ), function () {</span></pre>
 <pre><span class="lineno"><a href="#line_95" id="line_95">   95.</a></span><span class="count                ">      1</span><span>        [</span></pre>
-<pre><span class="lineno"><a href="#line_96" id="line_96">   96.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=",</span></pre>
-<pre><span class="lineno"><a href="#line_97" id="line_97">   97.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=12",</span></pre>
-<pre><span class="lineno"><a href="#line_98" id="line_98">   98.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=1?",</span></pre>
-<pre><span class="lineno"><a href="#line_99" id="line_99">   99.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=?",</span></pre>
-<pre><span class="lineno"><a href="#line_100" id="line_100">  100.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=",</span></pre>
-<pre><span class="lineno"><a href="#line_101" id="line_101">  101.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=12",</span></pre>
-<pre><span class="lineno"><a href="#line_102" id="line_102">  102.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=1?",</span></pre>
-<pre><span class="lineno"><a href="#line_103" id="line_103">  103.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=?",</span></pre>
-<pre><span class="lineno"><a href="#line_104" id="line_104">  104.</a></span><span class="count                ">      1</span><span>            "jslint_export_global=1",</span></pre>
-<pre><span class="lineno"><a href="#line_105" id="line_105">  105.</a></span><span class="count                ">      1</span><span>            "jslint_export_global=1&amp;",</span></pre>
-<pre><span class="lineno"><a href="#line_106" id="line_106">  106.</a></span><span class="count                ">      1</span><span>            "jslint_export_global=12",</span></pre>
-<pre><span class="lineno"><a href="#line_107" id="line_107">  107.</a></span><span class="count                ">      1</span><span>            "jslint_export_global=1?"</span></pre>
+<pre><span class="lineno"><a href="#line_96" id="line_96">   96.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=",</span></pre>
+<pre><span class="lineno"><a href="#line_97" id="line_97">   97.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=12",</span></pre>
+<pre><span class="lineno"><a href="#line_98" id="line_98">   98.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=1?",</span></pre>
+<pre><span class="lineno"><a href="#line_99" id="line_99">   99.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=?",</span></pre>
+<pre><span class="lineno"><a href="#line_100" id="line_100">  100.</a></span><span class="count                ">      1</span><span>            "?window_jslint=",</span></pre>
+<pre><span class="lineno"><a href="#line_101" id="line_101">  101.</a></span><span class="count                ">      1</span><span>            "?window_jslint=12",</span></pre>
+<pre><span class="lineno"><a href="#line_102" id="line_102">  102.</a></span><span class="count                ">      1</span><span>            "?window_jslint=1?",</span></pre>
+<pre><span class="lineno"><a href="#line_103" id="line_103">  103.</a></span><span class="count                ">      1</span><span>            "?window_jslint=?",</span></pre>
+<pre><span class="lineno"><a href="#line_104" id="line_104">  104.</a></span><span class="count                ">      1</span><span>            "window_jslint=1",</span></pre>
+<pre><span class="lineno"><a href="#line_105" id="line_105">  105.</a></span><span class="count                ">      1</span><span>            "window_jslint=1&amp;",</span></pre>
+<pre><span class="lineno"><a href="#line_106" id="line_106">  106.</a></span><span class="count                ">      1</span><span>            "window_jslint=12",</span></pre>
+<pre><span class="lineno"><a href="#line_107" id="line_107">  107.</a></span><span class="count                ">      1</span><span>            "window_jslint=1?"</span></pre>
 <pre><span class="lineno"><a href="#line_108" id="line_108">  108.</a></span><span class="count                ">     12</span><span>        ].forEach(function (import_meta_url) {</span></pre>
 <pre><span class="lineno"><a href="#line_109" id="line_109">  109.</a></span><span class="count                ">     12</span><span>            jslint.jslint_cli({</span></pre>
 <pre><span class="lineno"><a href="#line_110" id="line_110">  110.</a></span><span class="count                ">     12</span><span>                import_meta_url</span></pre>
@@ -260,10 +270,10 @@ body {
 <pre><span class="lineno"><a href="#line_112" id="line_112">  112.</a></span><span class="count                ">     12</span><span>            assertOrThrow(globalThis.jslint === undefined);</span></pre>
 <pre><span class="lineno"><a href="#line_113" id="line_113">  113.</a></span><span class="count                ">     12</span><span>        });</span></pre>
 <pre><span class="lineno"><a href="#line_114" id="line_114">  114.</a></span><span class="count                ">      1</span><span>        [</span></pre>
-<pre><span class="lineno"><a href="#line_115" id="line_115">  115.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=1",</span></pre>
-<pre><span class="lineno"><a href="#line_116" id="line_116">  116.</a></span><span class="count                ">      1</span><span>            "&amp;jslint_export_global=1&amp;",</span></pre>
-<pre><span class="lineno"><a href="#line_117" id="line_117">  117.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=1",</span></pre>
-<pre><span class="lineno"><a href="#line_118" id="line_118">  118.</a></span><span class="count                ">      1</span><span>            "?jslint_export_global=1&amp;"</span></pre>
+<pre><span class="lineno"><a href="#line_115" id="line_115">  115.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=1",</span></pre>
+<pre><span class="lineno"><a href="#line_116" id="line_116">  116.</a></span><span class="count                ">      1</span><span>            "&amp;window_jslint=1&amp;",</span></pre>
+<pre><span class="lineno"><a href="#line_117" id="line_117">  117.</a></span><span class="count                ">      1</span><span>            "?window_jslint=1",</span></pre>
+<pre><span class="lineno"><a href="#line_118" id="line_118">  118.</a></span><span class="count                ">      1</span><span>            "?window_jslint=1&amp;"</span></pre>
 <pre><span class="lineno"><a href="#line_119" id="line_119">  119.</a></span><span class="count                ">      4</span><span>        ].forEach(function (import_meta_url) {</span></pre>
 <pre><span class="lineno"><a href="#line_120" id="line_120">  120.</a></span><span class="count                ">      4</span><span>            jslint.jslint_cli({</span></pre>
 <pre><span class="lineno"><a href="#line_121" id="line_121">  121.</a></span><span class="count                ">      4</span><span>                import_meta_url</span></pre>

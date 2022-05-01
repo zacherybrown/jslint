@@ -125,13 +125,13 @@
     textLength="768"
     x="10"
     y="450"
->- allow jslint.mjs to auto-export itself to globalThis when given search-param `?jslint_export_g\</tspan>
+>- allow jslint.mjs to auto-export itself to globalThis when given search-param `?window_jslint=1\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="472"
->  lobal=1`                                                                                       </tspan>
+>  `                                                                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
