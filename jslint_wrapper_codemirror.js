@@ -28,23 +28,43 @@
 // Requires CodeMirror and JSLint.
 //
 // Example usage:
-//  <script defer
-//      src="https://codemirror.net/lib/codemirror.js"></script>
-//  <script defer
-//      src="https://codemirror.net/mode/javascript/javascript.js"></script>
-//  <script defer
-//      src="https://codemirror.net/addon/lint/lint.js"></script>
-//  <script defer type="module"
-//      src="./jslint.mjs?jslint_export_global=1"></script>
-//  <script defer
-//      src="./jslint_wrapper_codemirror.js"></script>
-//  <script>
+/*
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css">
+<link rel="stylesheet" href="https://codemirror.net/addon/lint/lint.css">
+<textarea id="editor1">console.log('hello world');</textarea>
+<script defer
+    src="https://codemirror.net/lib/codemirror.js"></script>
+<script defer
+    src="https://codemirror.net/mode/javascript/javascript.js"></script>
+<script defer
+    src="https://codemirror.net/addon/lint/lint.js"></script>
+<script type="module"
+    src="./jslint.mjs?jslint_export_global=1"></script>
+<script defer
+    src="./jslint_wrapper_codemirror.js"></script>
+<script>
+window.addEventListener("load", function () {
+    window.CodeMirror.fromTextArea(document.getElementById(
+        "editor1"
+    ), {
+        gutters: ["CodeMirror-lint-markers"],
+        lineNumbers: true,
+        lint: {
+            lintOnChange: true
+        },
+        mode: "javascript"
+    });
+});
+</script>
+</html>
+*/
 
-/*jslint browser*/
+/*jslint browser devel*/
 /*global CodeMirror define exports jslint module require*/
 /*property
-    Pos, amd, column, console, error, from, globals, jslint, jslint_result,
-    line, map, message, mode_stop, registerHelper, severity, to, warnings
+    Pos, amd, column, error, from, globals, jslint, jslint_result, line, map,
+    message, mode_stop, registerHelper, severity, to, warnings
 */
 
 (function (mod) {
@@ -68,27 +88,27 @@
 }(function (CodeMirror) {
     "use strict";
     if (!window.jslint) {
-        if (window.console) {
-            window.console.error(
-                "Error: window.jslint not defined,"
-                + " CodeMirror JavaScript linting cannot run."
-            );
-        }
+        console.error(
+            "Error: window.jslint not defined,"
+            + " CodeMirror JavaScript linting cannot run."
+        );
         return [];
     }
     CodeMirror.registerHelper("lint", "javascript", function (text, options) {
 
-// Save JSLint result to options-object, in case its needed again
+// Save JSLint result to global-object, in case its needed again
 // to generate reports.
 //
 // E.g.:
 //  cm.performLint();
-//  divReport.outerHTML = jslint.jslint_report(
-//      cm.state.lint.options.jslint_result
-//  );
+//  divReport.outerHTML = jslint.jslint_report(window.jslint_result);
 
-        options.jslint_result = jslint.jslint(text, options, options.globals);
-        return options.jslint_result.warnings.map(function ({
+        window.jslint_result = jslint.jslint(
+            text,
+            options,
+            options.globals
+        );
+        return window.jslint_result.warnings.map(function ({
             column,
             line,
             message,
