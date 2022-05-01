@@ -15,6 +15,7 @@ printf '> #!/bin/sh
 > 
 >     result = jslint.jslint(source);
 >     report = jslint.jslint_report(result);
+>     report = `<body class="JSLINT_">\\n${report}\\n</body>\\n`;
 > 
 >     await fs.promises.mkdir(".artifact/", {recursive: true});
 >     await fs.promises.writeFile(".artifact/jslint_report_hello.html", report);
@@ -41,6 +42,7 @@ import fs from "fs";
 
     result = jslint.jslint(source);
     report = jslint.jslint_report(result);
+    report = `<body class="JSLINT_">\n${report}\n</body>\n`;
 
     await fs.promises.mkdir(".artifact/", {recursive: true});
     await fs.promises.writeFile(".artifact/jslint_report_hello.html", report);
