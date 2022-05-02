@@ -1352,7 +1352,7 @@ jslint_assert(
         );
     }
 
-    html += "&lt;div class=\"JSLINT_\" id=\"JSLINT_REPORT_HTML\"&gt;\n";
+    html += "&lt;div class=\"JSLINT_ JSLINT_REPORT_HTML\"&gt;\n";
     html += String(`
 &lt;style class="JSLINT_REPORT_STYLE"&gt;
 /* jslint utility2:true */
@@ -1368,25 +1368,25 @@ AAAAAAAAAAAAAAAABmAAgiQINAmcDBEICuc41DEBNgIkA4R2C4I+AAQgBYkuByAMgScfYUIF\
 KDflSQnlJ0bP+QnPQAy744n9mup6H9PaCDFwM5zjf8exB89bZ1cdrYOP0NgnuRDRWlk9u/fE\
 llkxqmfH8lmRQ/DAmER9opk9wR6suc1LvTiXNEe1vbhUCH2USgnEwH3vUm05JQqejGvZvOtz\
 7sIKEGgLdDNl/IrfqWVZG/wr42ekomEm91VA1p4LhHBuFzHF8//u7vvbREHMQqGtNLmiOOD/\
-X7WWiwqyCE98qt0jk5JJmgR5WJJElBmzRb1F7a66Mm...
+X7WWiwqyCE98qt0jk5JJmgR5WJJElBmzRb1F7a66MmSLTNWZ2...
 }
 </pre></li>
 <li>Example usage:<pre class="apidocCodePre">...
+        mode: "javascript"
     });
-    function onChange() {
-        clearTimeout(editor.state.lint.timeout);
-        editor.state.lint.timeout = setTimeout(function () {
-            editor.performLint();
-            document.getElementById(
-                "JSLINT_REPORT_HTML"
-            ).outerHTML = window.jslint.<span class="apidocCodeKeywordSpan">jslint_report</span>(window.jslint_result);
-        }, editor.state.lint.options.delay);
-    }
-    editor.on("change", onChange);
-    onChange();
+    editor.on("lintJslintAfter", function ({
+        result
+    }) {
+        document.querySelector(
+            ".JSLINT_REPORT_HTML"
+        ).innerHTML = window.jslint.<span class="apidocCodeKeywordSpan">jslint_report</span>(result);
+    });
+    editor.performLint();
 });
 &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
+' &gt; .artifact/jslint_wrapper_codemirror.html
 ...</pre></li>
 
 <li>

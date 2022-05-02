@@ -1,5 +1,5 @@
-<svg height="1262" width="800" xmlns="http://www.w3.org/2000/svg">
-<rect height="1262" fill="#222" width="800"></rect>
+<svg height="1306" width="800" xmlns="http://www.w3.org/2000/svg">
+<rect height="1306" fill="#222" width="800"></rect>
 <text
     fill="#7f7"
     font-family="consolas, menlo, monospace"
@@ -95,252 +95,264 @@
     textLength="768"
     x="10"
     y="340"
->&gt;     &lt;link rel="stylesheet" href="https://codemirror.net/lib/codemirror.css"&gt;                   </tspan>
+>&gt;     &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/code\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="362"
->&gt;     &lt;link rel="stylesheet" href="https://codemirror.net/addon/lint/lint.css"&gt;                  </tspan>
+>  mirror.css"&gt;                                                                                   </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="384"
->&gt;     &lt;script defer src="https://codemirror.net/lib/codemirror.js"&gt;&lt;/script&gt;                     </tspan>
+>&gt;     &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/addo\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="406"
->&gt;     &lt;script defer                                                                              </tspan>
+>  n/lint/lint.css"&gt;                                                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="428"
->&gt;         src="https://codemirror.net/mode/javascript/javascript.js"&gt;&lt;/script&gt;                   </tspan>
+>&gt;     &lt;script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/codemirror.js"\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="450"
->&gt;     &lt;script defer src="https://codemirror.net/addon/lint/lint.js"&gt;&lt;/script&gt;                    </tspan>
+>  &gt;&lt;/script&gt;                                                                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="472"
->&gt;     &lt;script type="module" src="./jslint.mjs?window_jslint=1"&gt;&lt;/script&gt;                         </tspan>
+>&gt;     &lt;script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/mode/javascrip\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="494"
->&gt;     &lt;script defer src="./jslint_wrapper_codemirror.js"&gt;&lt;/script&gt;                               </tspan>
+>  t/javascript.js"&gt;&lt;/script&gt;                                                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="516"
->&gt; &lt;/head&gt;                                                                                        </tspan>
+>&gt;     &lt;script defer src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.3/addon/lint/lin\</tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="538"
->&gt; &lt;body style="background:#bbb; font-family:sans-serif; margin:0; padding:20px;"&gt;                </tspan>
+>  t.js"&gt;&lt;/script&gt;                                                                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="560"
->&gt;     &lt;h1&gt;CodeMirror: JSLint Demo&lt;/h1&gt;                                                           </tspan>
+>&gt;     &lt;script type="module" src="./jslint.mjs?window_jslint=1"&gt;&lt;/script&gt;                         </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="582"
->&gt;     &lt;h3&gt;                                                                                       </tspan>
+>&gt;     &lt;script defer src="./jslint_wrapper_codemirror.js"&gt;&lt;/script&gt;                               </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="604"
->&gt; This demo will auto-lint the code below, and auto-generate a report as you type.               </tspan>
+>&gt; &lt;/head&gt;                                                                                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="626"
->&gt;     &lt;/h3&gt;                                                                                      </tspan>
+>&gt; &lt;body style="background: #bbb; font-family: sans-serif; margin: 20px;"&gt;                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="648"
->&gt;     &lt;textarea id="editor1"&gt;console.log(&amp;apos;hello world&amp;apos;);&lt;/textarea&gt;                    </tspan>
+>&gt;     &lt;h1&gt;CodeMirror: JSLint Demo&lt;/h1&gt;                                                           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="670"
->&gt;     &lt;div style="margin-top:20px;"&gt;&lt;div id="JSLINT_REPORT_HTML"&gt;&lt;/div&gt;&lt;/div&gt;                    </tspan>
+>&gt;     &lt;h3&gt;                                                                                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="692"
->&gt; &lt;script type=module&gt;                                                                           </tspan>
+>&gt; This demo will auto-lint the code below, and auto-generate a report as you type.               </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="714"
->&gt; window.addEventListener("load", function () {                                                  </tspan>
+>&gt;     &lt;/h3&gt;                                                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="736"
->&gt;     let editor = window.CodeMirror.fromTextArea(document.getElementById(                       </tspan>
+>&gt;     &lt;textarea id="editor1"&gt;console.log(&amp;apos;hello world&amp;apos;);&lt;/textarea&gt;                    </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="758"
->&gt;         "editor1"                                                                              </tspan>
+>&gt;     &lt;div style="margin-top: 20px;"&gt;&lt;div class="JSLINT_REPORT_HTML"&gt;&lt;/div&gt;&lt;/div&gt;                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="780"
->&gt;     ), {                                                                                       </tspan>
+>&gt; &lt;script type=module&gt;                                                                           </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="802"
->&gt;         gutters: ["CodeMirror-lint-markers"],                                                  </tspan>
+>&gt; window.addEventListener("load", function () {                                                  </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="824"
->&gt;         indentUnit: 4,                                                                         </tspan>
+>&gt;     let editor = window.CodeMirror.fromTextArea(document.getElementById(                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="846"
->&gt;         lineNumbers: true,                                                                     </tspan>
+>&gt;         "editor1"                                                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="868"
->&gt;         lint: {lintOnChange: false},                                                           </tspan>
+>&gt;     ), {                                                                                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="890"
->&gt;         mode: "javascript"                                                                     </tspan>
+>&gt;         gutters: ["CodeMirror-lint-markers"],                                                  </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="912"
->&gt;     });                                                                                        </tspan>
+>&gt;         indentUnit: 4,                                                                         </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="934"
->&gt;     function onChange() {                                                                      </tspan>
+>&gt;         lineNumbers: true,                                                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="956"
->&gt;         clearTimeout(editor.state.lint.timeout);                                               </tspan>
+>&gt;         lint: {lintOnChange: true, options: {}},                                               </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="978"
->&gt;         editor.state.lint.timeout = setTimeout(function () {                                   </tspan>
+>&gt;         mode: "javascript"                                                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1000"
->&gt;             editor.performLint();                                                              </tspan>
+>&gt;     });                                                                                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1022"
->&gt;             document.getElementById(                                                           </tspan>
+>&gt;     editor.on("lintJslintAfter", function ({                                                   </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1044"
->&gt;                 "JSLINT_REPORT_HTML"                                                           </tspan>
+>&gt;         result                                                                                 </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1066"
->&gt;             ).outerHTML = window.jslint.jslint_report(window.jslint_result);                   </tspan>
+>&gt;     }) {                                                                                       </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1088"
->&gt;         }, editor.state.lint.options.delay);                                                   </tspan>
+>&gt;         document.querySelector(                                                                </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1110"
->&gt;     }                                                                                          </tspan>
+>&gt;             ".JSLINT_REPORT_HTML"                                                              </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1132"
->&gt;     editor.on("change", onChange);                                                             </tspan>
+>&gt;         ).innerHTML = window.jslint.jslint_report(result);                                     </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1154"
->&gt;     onChange();                                                                                </tspan>
+>&gt;     });                                                                                        </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1176"
->&gt; });                                                                                            </tspan>
+>&gt;     editor.performLint();                                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1198"
->&gt; &lt;/script&gt;                                                                                      </tspan>
+>&gt; });                                                                                            </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1220"
->&gt; &lt;/body&gt;                                                                                        </tspan>
+>&gt; &lt;/script&gt;                                                                                      </tspan>
 <tspan
     lengthAdjust="spacingAndGlyphs"
     textLength="768"
     x="10"
     y="1242"
+>&gt; &lt;/body&gt;                                                                                        </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="1264"
+>&gt; &lt;/html&gt;                                                                                        </tspan>
+<tspan
+    lengthAdjust="spacingAndGlyphs"
+    textLength="768"
+    x="10"
+    y="1286"
 >&gt; ' &gt; .artifact/jslint_wrapper_codemirror.html                                                   </tspan>
 
 </text>
