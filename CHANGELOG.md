@@ -13,7 +13,7 @@
 - jslint - add new warning "Expected Object.create(null) instead of {}"
 - node - after node-v14 is deprecated, remove shell-code `export "NODE_OPTIONS=--unhandled-rejections=strict"`.
 
-# v2022.9.20
+# v2022.9.1-beta
 - directive - add new directive `fart` to allow complex fat-arrow
 
 # v2022.7.20
